@@ -32,30 +32,7 @@
                         <a class="nav-link" href="/Home/Iletisim/">İletişim</a>
                     </li>
                 </ul>
-                   @* @if (Session["uyeid"] != null)
-                     {
-                        <li class="nav-item">
-                            <a class="nav-link" href="/Uye/Index/@Session["uyeid"]">@Session["kullaniciadi"].ToString()</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/Uye/Logout/">Çıkış</a>
-                        </li>
-                        if (Convert.ToInt32(Session["yetkiid"]) == 1)
-                        {
-                            <li class="nav-item">
-                                <a class="nav-link" href="/Admin/Index/" target="_blank">Yönetim Paneli</a>
-                            </li>
-                        }
-                    }
-                    else
-                    {
-                        <li class="nav-item">
-                            <a class="nav-link" href="/Uye/Login/">Giriş</a>
-                        </li>
-                    }
-
-                </ul>
-                 *@
+                   
                 <ul class="nav navbar-nav navbar-right top-nav">
                     @if (Session["uyeid"] != null)
                     {
